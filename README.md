@@ -1,0 +1,1 @@
+# knn-kisilik-analizi
