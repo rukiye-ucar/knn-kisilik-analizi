@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Big Five Personality Test</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&family=Roboto+Slab:wght@100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merienda:wght@300..900&family=Pacifico&family=Playwrite+BE+WAL:wght@100..400&family=Roboto+Slab:wght@100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<h1>Big Five Personality Test</h1>
+<form id="personalityForm" >
+
+  <div class="question">
+    <label for="EXT1">1. I am the life of the party.</label>
+    <div class="options">
+      <label><input type="radio" name="EXT1" value="1" required> 1</label>
+      <label><input type="radio" name="EXT1" value="2"> 2</label>
+      <label><input type="radio" name="EXT1" value="3"> 3</label>
+      <label><input type="radio" name="EXT1" value="4"> 4</label>
+      <label><input type="radio" name="EXT1" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EXT2">2. I don't talk a lot.</label>
+    <div class="options">
+      <label><input type="radio" name="EXT2" value="1" required> 1</label>
+      <label><input type="radio" name="EXT2" value="2"> 2</label>
+      <label><input type="radio" name="EXT2" value="3"> 3</label>
+      <label><input type="radio" name="EXT2" value="4"> 4</label>
+      <label><input type="radio" name="EXT2" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EXT3">3. I feel comfortable around people.</label>
+    <div class="options">
+      <label><input type="radio" name="EXT3" value="1" required> 1</label>
+      <label><input type="radio" name="EXT3" value="2"> 2</label>
+      <label><input type="radio" name="EXT3" value="3"> 3</label>
+      <label><input type="radio" name="EXT3" value="4"> 4</label>
+      <label><input type="radio" name="EXT3" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EXT4">4. I keep in the background.</label>
+    <div class="options">
+      <label><input type="radio" name="EXT4" value="1" required> 1</label>
+      <label><input type="radio" name="EXT4" value="2"> 2</label>
+      <label><input type="radio" name="EXT4" value="3"> 3</label>
+      <label><input type="radio" name="EXT4" value="4"> 4</label>
+      <label><input type="radio" name="EXT4" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EXT5">5. I start conversations.</label>
+    <div class="options">
+      <label><input type="radio" name="EXT5" value="1" required> 1</label>
+      <label><input type="radio" name="EXT5" value="2"> 2</label>
+      <label><input type="radio" name="EXT5" value="3"> 3</label>
+      <label><input type="radio" name="EXT5" value="4"> 4</label>
+      <label><input type="radio" name="EXT5" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EXT6">6. I have little to say.</label>
+    <div class="options">
+      <label><input type="radio" name="EXT6" value="1" required> 1</label>
+      <label><input type="radio" name="EXT6" value="2"> 2</label>
+      <label><input type="radio" name="EXT6" value="3"> 3</label>
+      <label><input type="radio" name="EXT6" value="4"> 4</label>
+      <label><input type="radio" name="EXT6" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EXT7">7. I talk to a lot of different people at parties.</label>
+    <div class="options">
+      <label><input type="radio" name="EXT7" value="1" required> 1</label>
+      <label><input type="radio" name="EXT7" value="2"> 2</label>
+      <label><input type="radio" name="EXT7" value="3"> 3</label>
+      <label><input type="radio" name="EXT7" value="4"> 4</label>
+      <label><input type="radio" name="EXT7" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EXT8">8. I don't like to draw attention to myself.</label>
+    <div class="options">
+      <label><input type="radio" name="EXT8" value="1" required> 1</label>
+      <label><input type="radio" name="EXT8" value="2"> 2</label>
+      <label><input type="radio" name="EXT8" value="3"> 3</label>
+      <label><input type="radio" name="EXT8" value="4"> 4</label>
+      <label><input type="radio" name="EXT8" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EXT9">9. I don't mind being the center of attention.</label>
+    <div class="options">
+      <label><input type="radio" name="EXT9" value="1" required> 1</label>
+      <label><input type="radio" name="EXT9" value="2"> 2</label>
+      <label><input type="radio" name="EXT9" value="3"> 3</label>
+      <label><input type="radio" name="EXT9" value="4"> 4</label>
+      <label><input type="radio" name="EXT9" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EXT10">10. I am quiet around strangers.</label>
+    <div class="options">
+      <label><input type="radio" name="EXT10" value="1" required> 1</label>
+      <label><input type="radio" name="EXT10" value="2"> 2</label>
+      <label><input type="radio" name="EXT10" value="3"> 3</label>
+      <label><input type="radio" name="EXT10" value="4"> 4</label>
+      <label><input type="radio" name="EXT10" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EST1">11. I get stressed out easily.</label>
+    <div class="options">
+      <label><input type="radio" name="EST1" value="1" required> 1</label>
+      <label><input type="radio" name="EST1" value="2"> 2</label>
+      <label><input type="radio" name="EST1" value="3"> 3</label>
+      <label><input type="radio" name="EST1" value="4"> 4</label>
+      <label><input type="radio" name="EST1" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EST2">12. I am relaxed most of the time.</label>
+    <div class="options">
+      <label><input type="radio" name="EST2" value="1" required> 1</label>
+      <label><input type="radio" name="EST2" value="2"> 2</label>
+      <label><input type="radio" name="EST2" value="3"> 3</label>
+      <label><input type="radio" name="EST2" value="4"> 4</label>
+      <label><input type="radio" name="EST2" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EST3">13. I worry about things.</label>
+    <div class="options">
+      <label><input type="radio" name="EST3" value="1" required> 1</label>
+      <label><input type="radio" name="EST3" value="2"> 2</label>
+      <label><input type="radio" name="EST3" value="3"> 3</label>
+      <label><input type="radio" name="EST3" value="4"> 4</label>
+      <label><input type="radio" name="EST3" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EST4">14. I seldom feel blue.</label>
+    <div class="options">
+      <label><input type="radio" name="EST4" value="1" required> 1</label>
+      <label><input type="radio" name="EST4" value="2"> 2</label>
+      <label><input type="radio" name="EST4" value="3"> 3</label>
+      <label><input type="radio" name="EST4" value="4"> 4</label>
+      <label><input type="radio" name="EST4" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EST5">15. I am easily disturbed.</label>
+    <div class="options">
+      <label><input type="radio" name="EST5" value="1" required> 1</label>
+      <label><input type="radio" name="EST5" value="2"> 2</label>
+      <label><input type="radio" name="EST5" value="3"> 3</label>
+      <label><input type="radio" name="EST5" value="4"> 4</label>
+      <label><input type="radio" name="EST5" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EST6">16. I get upset easily.</label>
+    <div class="options">
+      <label><input type="radio" name="EST6" value="1" required> 1</label>
+      <label><input type="radio" name="EST6" value="2"> 2</label>
+      <label><input type="radio" name="EST6" value="3"> 3</label>
+      <label><input type="radio" name="EST6" value="4"> 4</label>
+      <label><input type="radio" name="EST6" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EST7">17. I change my mood a lot.</label>
+    <div class="options">
+      <label><input type="radio" name="EST7" value="1" required> 1</label>
+      <label><input type="radio" name="EST7" value="2"> 2</label>
+      <label><input type="radio" name="EST7" value="3"> 3</label>
+      <label><input type="radio" name="EST7" value="4"> 4</label>
+      <label><input type="radio" name="EST7" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EST8">18. I have frequent mood swings.</label>
+    <div class="options">
+      <label><input type="radio" name="EST8" value="1" required> 1</label>
+      <label><input type="radio" name="EST8" value="2"> 2</label>
+      <label><input type="radio" name="EST8" value="3"> 3</label>
+      <label><input type="radio" name="EST8" value="4"> 4</label>
+      <label><input type="radio" name="EST8" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EST9">19. I get irritated easily.</label>
+    <div class="options">
+      <label><input type="radio" name="EST9" value="1" required> 1</label>
+      <label><input type="radio" name="EST9" value="2"> 2</label>
+      <label><input type="radio" name="EST9" value="3"> 3</label>
+      <label><input type="radio" name="EST9" value="4"> 4</label>
+      <label><input type="radio" name="EST9" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="EST10">20. I often feel blue.</label>
+    <div class="options">
+      <label><input type="radio" name="EST10" value="1" required> 1</label>
+      <label><input type="radio" name="EST10" value="2"> 2</label>
+      <label><input type="radio" name="EST10" value="3"> 3</label>
+      <label><input type="radio" name="EST10" value="4"> 4</label>
+      <label><input type="radio" name="EST10" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="AGR1">21. I feel little concern for others.</label>
+    <div class="options">
+      <label><input type="radio" name="AGR1" value="1" required> 1</label>
+      <label><input type="radio" name="AGR1" value="2"> 2</label>
+      <label><input type="radio" name="AGR1" value="3"> 3</label>
+      <label><input type="radio" name="AGR1" value="4"> 4</label>
+      <label><input type="radio" name="AGR1" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="AGR2">22. I am interested in people.</label>
+    <div class="options">
+      <label><input type="radio" name="AGR2" value="1" required> 1</label>
+      <label><input type="radio" name="AGR2" value="2"> 2</label>
+      <label><input type="radio" name="AGR2" value="3"> 3</label>
+      <label><input type="radio" name="AGR2" value="4"> 4</label>
+      <label><input type="radio" name="AGR2" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="AGR3">23. I insult people.</label>
+    <div class="options">
+      <label><input type="radio" name="AGR3" value="1" required> 1</label>
+      <label><input type="radio" name="AGR3" value="2"> 2</label>
+      <label><input type="radio" name="AGR3" value="3"> 3</label>
+      <label><input type="radio" name="AGR3" value="4"> 4</label>
+      <label><input type="radio" name="AGR3" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="AGR4">24. I sympathize with others' feelings.</label>
+    <div class="options">
+      <label><input type="radio" name="AGR4" value="1" required> 1</label>
+      <label><input type="radio" name="AGR4" value="2"> 2</label>
+      <label><input type="radio" name="AGR4" value="3"> 3</label>
+      <label><input type="radio" name="AGR4" value="4"> 4</label>
+      <label><input type="radio" name="AGR4" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="AGR5">25. I am not interested in other people's problems.</label>
+    <div class="options">
+      <label><input type="radio" name="AGR5" value="1" required> 1</label>
+      <label><input type="radio" name="AGR5" value="2"> 2</label>
+      <label><input type="radio" name="AGR5" value="3"> 3</label>
+      <label><input type="radio" name="AGR5" value="4"> 4</label>
+      <label><input type="radio" name="AGR5" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="AGR6">26. I have a soft heart.</label>
+    <div class="options">
+      <label><input type="radio" name="AGR6" value="1" required> 1</label>
+      <label><input type="radio" name="AGR6" value="2"> 2</label>
+      <label><input type="radio" name="AGR6" value="3"> 3</label>
+      <label><input type="radio" name="AGR6" value="4"> 4</label>
+      <label><input type="radio" name="AGR6" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="AGR7">27. I am not really interested in others.</label>
+    <div class="options">
+      <label><input type="radio" name="AGR7" value="1" required> 1</label>
+      <label><input type="radio" name="AGR7" value="2"> 2</label>
+      <label><input type="radio" name="AGR7" value="3"> 3</label>
+      <label><input type="radio" name="AGR7" value="4"> 4</label>
+      <label><input type="radio" name="AGR7" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="AGR8">28. I take time out for others.</label>
+    <div class="options">
+      <label><input type="radio" name="AGR8" value="1" required> 1</label>
+      <label><input type="radio" name="AGR8" value="2"> 2</label>
+      <label><input type="radio" name="AGR8" value="3"> 3</label>
+      <label><input type="radio" name="AGR8" value="4"> 4</label>
+      <label><input type="radio" name="AGR8" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="AGR9">29. I feel others' emotions.</label>
+    <div class="options">
+      <label><input type="radio" name="AGR9" value="1" required> 1</label>
+      <label><input type="radio" name="AGR9" value="2"> 2</label>
+      <label><input type="radio" name="AGR9" value="3"> 3</label>
+      <label><input type="radio" name="AGR9" value="4"> 4</label>
+      <label><input type="radio" name="AGR9" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="AGR10">30. I make people feel at ease.</label>
+    <div class="options">
+      <label><input type="radio" name="AGR10" value="1" required> 1</label>
+      <label><input type="radio" name="AGR10" value="2"> 2</label>
+      <label><input type="radio" name="AGR10" value="3"> 3</label>
+      <label><input type="radio" name="AGR10" value="4"> 4</label>
+      <label><input type="radio" name="AGR10" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="CSN1">31. I am always prepared.</label>
+    <div class="options">
+      <label><input type="radio" name="CSN1" value="1" required> 1</label>
+      <label><input type="radio" name="CSN1" value="2"> 2</label>
+      <label><input type="radio" name="CSN1" value="3"> 3</label>
+      <label><input type="radio" name="CSN1" value="4"> 4</label>
+      <label><input type="radio" name="CSN1" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="CSN2">32. I leave my belongings around.</label>
+    <div class="options">
+      <label><input type="radio" name="CSN2" value="1" required> 1</label>
+      <label><input type="radio" name="CSN2" value="2"> 2</label>
+      <label><input type="radio" name="CSN2" value="3"> 3</label>
+      <label><input type="radio" name="CSN2" value="4"> 4</label>
+      <label><input type="radio" name="CSN2" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="CSN3">33. I pay attention to details.</label>
+    <div class="options">
+      <label><input type="radio" name="CSN3" value="1" required> 1</label>
+      <label><input type="radio" name="CSN3" value="2"> 2</label>
+      <label><input type="radio" name="CSN3" value="3"> 3</label>
+      <label><input type="radio" name="CSN3" value="4"> 4</label>
+      <label><input type="radio" name="CSN3" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="CSN4">34. I make a mess of things.</label>
+    <div class="options">
+      <label><input type="radio" name="CSN4" value="1" required> 1</label>
+      <label><input type="radio" name="CSN4" value="2"> 2</label>
+      <label><input type="radio" name="CSN4" value="3"> 3</label>
+      <label><input type="radio" name="CSN4" value="4"> 4</label>
+      <label><input type="radio" name="CSN4" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="CSN5">35. I get chores done right away.</label>
+    <div class="options">
+      <label><input type="radio" name="CSN5" value="1" required> 1</label>
+      <label><input type="radio" name="CSN5" value="2"> 2</label>
+      <label><input type="radio" name="CSN5" value="3"> 3</label>
+      <label><input type="radio" name="CSN5" value="4"> 4</label>
+      <label><input type="radio" name="CSN5" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="CSN6">36. I often forget to put things back in their proper place.</label>
+    <div class="options">
+      <label><input type="radio" name="CSN6" value="1" required> 1</label>
+      <label><input type="radio" name="CSN6" value="2"> 2</label>
+      <label><input type="radio" name="CSN6" value="3"> 3</label>
+      <label><input type="radio" name="CSN6" value="4"> 4</label>
+      <label><input type="radio" name="CSN6" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="CSN7">37. I like order.</label>
+    <div class="options">
+      <label><input type="radio" name="CSN7" value="1" required> 1</label>
+      <label><input type="radio" name="CSN7" value="2"> 2</label>
+      <label><input type="radio" name="CSN7" value="3"> 3</label>
+      <label><input type="radio" name="CSN7" value="4"> 4</label>
+      <label><input type="radio" name="CSN7" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="CSN8">38. I shirk my duties.</label>
+    <div class="options">
+      <label><input type="radio" name="CSN8" value="1" required> 1</label>
+      <label><input type="radio" name="CSN8" value="2"> 2</label>
+      <label><input type="radio" name="CSN8" value="3"> 3</label>
+      <label><input type="radio" name="CSN8" value="4"> 4</label>
+      <label><input type="radio" name="CSN8" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="CSN9">39. I follow a schedule.</label>
+    <div class="options">
+      <label><input type="radio" name="CSN9" value="1" required> 1</label>
+      <label><input type="radio" name="CSN9" value="2"> 2</label>
+      <label><input type="radio" name="CSN9" value="3"> 3</label>
+      <label><input type="radio" name="CSN9" value="4"> 4</label>
+      <label><input type="radio" name="CSN9" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="CSN10">40. I am exacting in my work.</label>
+    <div class="options">
+      <label><input type="radio" name="CSN10" value="1" required> 1</label>
+      <label><input type="radio" name="CSN10" value="2"> 2</label>
+      <label><input type="radio" name="CSN10" value="3"> 3</label>
+      <label><input type="radio" name="CSN10" value="4"> 4</label>
+      <label><input type="radio" name="CSN10" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="OPN1">41. I have a rich vocabulary.</label>
+    <div class="options">
+      <label><input type="radio" name="OPN1" value="1" required> 1</label>
+      <label><input type="radio" name="OPN1" value="2"> 2</label>
+      <label><input type="radio" name="OPN1" value="3"> 3</label>
+      <label><input type="radio" name="OPN1" value="4"> 4</label>
+      <label><input type="radio" name="OPN1" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="OPN2">42. I have difficulty understanding abstract ideas.</label>
+    <div class="options">
+      <label><input type="radio" name="OPN2" value="1" required> 1</label>
+      <label><input type="radio" name="OPN2" value="2"> 2</label>
+      <label><input type="radio" name="OPN2" value="3"> 3</label>
+      <label><input type="radio" name="OPN2" value="4"> 4</label>
+      <label><input type="radio" name="OPN2" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="OPN3">43. I have a vivid imagination.</label>
+    <div class="options">
+      <label><input type="radio" name="OPN3" value="1" required> 1</label>
+      <label><input type="radio" name="OPN3" value="2"> 2</label>
+      <label><input type="radio" name="OPN3" value="3"> 3</label>
+      <label><input type="radio" name="OPN3" value="4"> 4</label>
+      <label><input type="radio" name="OPN3" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="OPN4">44. I am not interested in abstract ideas.</label>
+    <div class="options">
+      <label><input type="radio" name="OPN4" value="1" required> 1</label>
+      <label><input type="radio" name="OPN4" value="2"> 2</label>
+      <label><input type="radio" name="OPN4" value="3"> 3</label>
+      <label><input type="radio" name="OPN4" value="4"> 4</label>
+      <label><input type="radio" name="OPN4" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="OPN5">45. I have excellent ideas.</label>
+    <div class="options">
+      <label><input type="radio" name="OPN5" value="1" required> 1</label>
+      <label><input type="radio" name="OPN5" value="2"> 2</label>
+      <label><input type="radio" name="OPN5" value="3"> 3</label>
+      <label><input type="radio" name="OPN5" value="4"> 4</label>
+      <label><input type="radio" name="OPN5" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="OPN6">46. I do not have a good imagination.</label>
+    <div class="options">
+      <label><input type="radio" name="OPN6" value="1" required> 1</label>
+      <label><input type="radio" name="OPN6" value="2"> 2</label>
+      <label><input type="radio" name="OPN6" value="3"> 3</label>
+      <label><input type="radio" name="OPN6" value="4"> 4</label>
+      <label><input type="radio" name="OPN6" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="OPN7">47. I am quick to understand things.</label>
+    <div class="options">
+      <label><input type="radio" name="OPN7" value="1" required> 1</label>
+      <label><input type="radio" name="OPN7" value="2"> 2</label>
+      <label><input type="radio" name="OPN7" value="3"> 3</label>
+      <label><input type="radio" name="OPN7" value="4"> 4</label>
+      <label><input type="radio" name="OPN7" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="OPN8">48. I use difficult words.</label>
+    <div class="options">
+      <label><input type="radio" name="OPN8" value="1" required> 1</label>
+      <label><input type="radio" name="OPN8" value="2"> 2</label>
+      <label><input type="radio" name="OPN8" value="3"> 3</label>
+      <label><input type="radio" name="OPN8" value="4"> 4</label>
+      <label><input type="radio" name="OPN8" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="OPN9">49. I spend time reflecting on things.</label>
+    <div class="options">
+      <label><input type="radio" name="OPN9" value="1" required> 1</label>
+      <label><input type="radio" name="OPN9" value="2"> 2</label>
+      <label><input type="radio" name="OPN9" value="3"> 3</label>
+      <label><input type="radio" name="OPN9" value="4"> 4</label>
+      <label><input type="radio" name="OPN9" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label for="OPN10">50. I am full of ideas.</label>
+    <div class="options">
+      <label><input type="radio" name="OPN10" value="1" required> 1</label>
+      <label><input type="radio" name="OPN10" value="2"> 2</label>
+      <label><input type="radio" name="OPN10" value="3"> 3</label>
+      <label><input type="radio" name="OPN10" value="4"> 4</label>
+      <label><input type="radio" name="OPN10" value="5"> 5</label>
+    </div>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  document.getElementById("personalityForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Form verilerini oku
+    const formData = new FormData(this);
+    const data = {};
+    for (let [key, value] of formData.entries()) {
+      data[key] = parseInt(value);
+    }
+
+    console.log("📤 Gönderilen Veri:", data);
+
+    // Flask API'ye POST isteği at
+    fetch("tahmin", {
+      method: "POST",
+      mode: "cors", // CORS politikası için ekledik
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    })
+    .then(res => {
+      if (!res.ok) {
+        throw new Error("HTTP error " + res.status);
+      }
+      return res.json();
+    })
+    .then(result => {
+      console.log("✅ Tahmin Başarılı:", result);
+      let msg = "🧠 Big Five Tahminin:\n" + 
+        "Açıklık (OPN): " + result.OPN + "\n" +
+        "Sorumluluk (CSN): " + result.CSN + "\n" +
+        "Dışadönüklük (EXT): " + result.EXT + "\n" +
+        "Uyumluluk (AGR): " + result.AGR + "\n" +
+        "Duygusal Dengesizlik (EST): " + result.EST;
+      
+      if (result.model_sonucu !== undefined) {
+        msg += "\n\nModel Kişilik Grubu / Sınıfı: " + result.model_sonucu;
+      }
+      
+      alert(msg);
+    })
+    .catch(error => {
+      console.error("❌ HATA:", error);
+      alert("Bir şeyler yanlış gitti canım: " + error.message);
+    });
+  });
+</script>
+
+
+</body>
+</html>
